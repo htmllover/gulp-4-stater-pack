@@ -1,0 +1,419 @@
+// Accordions
+
+
+//accordion one style
+
+.accordion .card {
+  background-color: #fff;
+  border: 1px solid #f1f2f3 !important;
+  margin-bottom: 16px;
+}
+.accordion>.card {
+  overflow: hidden;
+}
+
+
+.accordion-connected .card-title {
+  border-bottom: 0;
+}
+
+.accordion .card-title {
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f9fafb;
+}
+
+
+
+
+.accordion .card-title a {
+  display: block;
+  padding: 16px 33px;
+  color: #323d47;
+}
+.accordion .card-title a.collapsed::before {
+  transform: rotate(-135deg);
+}
+.accordion .card-title a::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #757575;
+  border-top: 1px solid #757575;
+  margin-right: 20px;
+  margin-left: -33px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  transition: .2s linear;
+}
+
+
+
+
+
+.accordion-connected {
+  border: 1px solid #f1f2f3;
+}
+.accordion-connected .card {
+  margin-bottom: 0;
+  border: 0 !important;
+  border-bottom: 1px solid #f1f2f3 !important;
+}
+.accordion-connected .card-title {
+  border-bottom: 0;
+}
+
+.accordion-connected .card-title a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.accordion>.card:first-of-type {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.accordion-connected .card {
+  margin-bottom: 0;
+  border: 0 !important;
+  border-bottom: 1px solid #f1f2f3 !important;
+}
+
+
+
+
+
+.accordion-light .card-title {
+  background-color: #fff;
+}
+
+
+
+.accordion-arrow-right .card-title a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion-arrow-right .card-title a::before {
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+}
+
+
+
+
+.accordion-one{
+  .card{
+    background: transparent;
+    .card-header {
+      background: $custom-color;
+      a{
+        display: inline-block;
+        width: 100%;
+        font-family: $heading-font-family;
+        color: inherit;
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f068";
+          display: inline-block;
+          padding-right: 3px;
+          vertical-align: middle;
+          font-weight: $bold;
+          float: right;
+        }
+      }
+      .collapsed {
+        &:after {
+          content: "\f067";
+        }
+      }
+      &:hover{
+        a{
+          color: $primary-color;
+        }
+      }
+    }
+    &:last-child{
+      border-bottom: none !important;
+    }
+
+    .card-body{
+      p{
+        opacity: $opacity-9;
+      }
+      &:last-child{
+        border-bottom: 1px solid rgba(0,0,0,.125);
+      }
+    }
+
+  }
+}
+
+//accordion two style
+.accordion-two{
+  .card{
+    background: transparent;
+    border: none;
+    .card-header {
+      background: $white-color;
+      margin-bottom: 0.92857143em;
+      a{
+        display: inline-block;
+        width: 100%;
+        font-family: $heading-font-family;
+        color: inherit;
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f077";
+          display: inline-block;
+          padding-right: 3px;
+          vertical-align: middle;
+          font-weight: $bold;
+          float: right;
+        }
+      }
+      .collapsed {
+        &:after {
+          content: "\f078";
+        }
+      }
+      &:hover{
+        background: $primary-color;
+        a{
+          color: $white-color;
+        }
+      }
+    }
+    &:last-child{
+      border-bottom: none !important;
+    }
+
+    .card-body{
+      padding-top: 0;
+      p{
+        opacity: $opacity-9;
+      }
+    }
+
+  }
+}
+
+//accordion three style
+.accordion-three{
+  .card{
+    background: transparent;
+    border: none;
+    .card-header {
+      background: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom-color: inherit;
+      a{
+        display: inline-block;
+        width: 100%;
+        font-family: $heading-font-family;
+        color: inherit;
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f077";
+          display: inline-block;
+          margin-right: 6px;
+          vertical-align: middle;
+          font-weight: $bold;
+          float: left;
+        }
+      }
+      .collapsed {
+        &:after {
+          content: "\f078";
+        }
+      }
+    }
+    &:last-child{
+      border-bottom: none !important;
+    }
+
+    .card-body{
+      padding-left: 0;
+      padding-right: 0;
+      p{
+        opacity: $opacity-9;
+      }
+      &:last-child{
+        border-bottom: 1px solid rgba(0,0,0,.125);
+      }
+    }
+
+  }
+}
+
+//accordion four style
+.accordion-four{
+  .card{
+    background: transparent;
+    border: none;
+    .card-header {
+      background: $white-color;
+      margin-bottom: 0.92857143em;
+      a{
+        display: inline-block;
+        width: 100%;
+        font-family: $heading-font-family;
+        color: inherit;
+        strong{
+          font-size: 1.45714286em;
+          font-weight: $bold;
+          color: $primary-color;
+          margin-right: 6px;
+        }
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f077";
+          display: inline-block;
+          padding-right: 3px;
+          vertical-align: middle;
+          font-weight: $bold;
+          float: right;
+        }
+      }
+      .collapsed {
+        &:after {
+          content: "\f078";
+        }
+      }
+    }
+    &:last-child{
+      border-bottom: none !important;
+    }
+
+    .card-body{
+      padding-top: 0;
+      p{
+        opacity: $opacity-9;
+      }
+    }
+
+  }
+}
+
+
+// accordion five style
+
+.accordion-five{
+  .card{
+    margin-bottom: 1.5rem;
+    border-radius: 0.375rem !important;
+    position: relative;
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    border-bottom: 0;
+    .card-header{
+      a{
+        display: inline-block;
+        width: 100%;
+        font-family: $heading-font-family;
+        color: inherit;
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f068";
+          display: inline-block;
+          padding-right: 3px;
+          vertical-align: middle;
+          font-weight: $bold;
+          float: right;
+        }
+      }
+      .collapsed {
+        &:after {
+          content: "\f067";
+        }
+      }
+      &:hover{
+        a{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+//faq accordion style
+.faq-accordion-style {
+  .card{
+    border: 0 !important;
+    .card-title{
+      border-radius: 4px;
+      background: $custom-color;
+      margin-bottom: 0;
+      a{
+        font-family: $heading-font-family;
+        font-weight: $medium;
+        display: block;
+        padding: 1rem 1.45rem;
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-left: 1px solid $body-color;
+          border-top: 1px solid $body-color;
+          margin-right: 20px;
+          margin-left: -33px;
+          margin-bottom: 3px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transition: .2s linear;
+          transition: .2s linear;
+          text-shadow: 1px 1px 1px $dark-color;
+        }
+      }
+      a.collapsed{
+        &:before {
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+      }
+    }
+    .card-body{
+      padding: 1rem 1.45rem;
+    }
+  }
+}
+
+//faq accordion with border style
+.faq-accordion-style.faq-accordion-border{
+  border: 1px solid  $custom-dark-border-color;
+  border-radius: 4px;
+  .card{
+    margin-bottom: 0;
+    border: 0 !important;
+    border-bottom: 1px solid $custom-dark-border-color !important;
+    .card-title{
+      margin-bottom: 0;
+      border-radius: 0 !important;
+    }
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.faq-accordion-style.faq-arrow-right{
+  .card-title{
+    a{
+      &:before{
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+ul.list{
+  list-style: inherit;
+  padding-left: 1.5em;
+  li{
+    ul{
+      list-style-type: circle;
+      padding-left: 1.5em;
+    }
+  }
+}
+ol.list{
+  li{
+    list-style-type: decimal;
+    ol{
+      padding-left: 1.5em;
+      li{
+        list-style-type: inherit;
+      }
+    }
+  }
+}

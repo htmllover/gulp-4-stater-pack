@@ -1,0 +1,167 @@
+//gradient animated background
+.animated-color-bg{
+  //background: linear-gradient(272deg, #303fd9,#5448BD,#8F48BD,#BD48B1);
+  background: linear-gradient(272deg,$primary-color, $secondary-color);
+  background-size: 800% 800%;
+  -webkit-animation: AnimatedBg 12s ease infinite;
+  -moz-animation: AnimatedBg 12s ease infinite;
+  -o-animation: AnimatedBg 12s ease infinite;
+  animation: AnimatedBg 12s ease infinite;
+}
+
+
+
+@-webkit-keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+
+
+
+//virtical scroll
+
+@keyframes vertical-scroll{
+  100%{transform:translateY(0%);
+    -moz-transform:translateY(0%);
+    -webkit-transform:translateY(0%)
+  }
+}
+
+
+//gradient bg
+.gradient-bg{
+    background: $primary-color;
+    background: -webkit-linear-gradient(top left, $primary-color 0%, $secondary-color 100%);
+    background: -o-linear-gradient(top left, $primary-color 0%, $secondary-color 100%);
+    background: linear-gradient(to bottom right, $primary-color 0%, $secondary-color 100%);
+}
+
+//gradient bg one
+
+.gradient-bg-one{
+    background: $primary-color;
+    background: -webkit-linear-gradient(to right, $primary-color, $secondary-color);
+    background: -o-linear-gradient(to right, $primary-color, $secondary-color);
+    background-image: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+
+
+
+//top to bottom animation on hover
+
+@-webkit-keyframes topToBottom {
+    49% {-webkit-transform: translateY(-100%);}
+    50% {opacity: 0; -webkit-transform: translateY(100%);}
+    51% {opacity: 1;}
+}
+@-moz-keyframes topToBottom {
+    49% {-moz-transform: translateY(-100%);}
+    50% {opacity: 0; -moz-transform: translateY(100%);}
+    51% {opacity: 1;}
+}
+@keyframes topToBottom {
+    49% {transform: translateY(-100%);}
+    50% {opacity: 0; transform: translateY(100%);}
+    51% {opacity: 1;}
+}
+
+
+
+//bottom to top animation on hover
+
+@-webkit-keyframes bottomToTop {
+    49% {-webkit-transform: translateY(100%);}
+    50% {opacity: 0; -webkit-transform: translateY(-100%);}
+    51% {opacity: 1;}
+}
+@-moz-keyframes bottomToTop {
+    49% {-moz-transform: translateY(100%);}
+    50% {opacity: 0; -moz-transform: translateY(-100%);}
+    51% {opacity: 1;}
+}
+@keyframes bottomToTop {
+    49% {transform: translateY(100%);}
+    50% {opacity: 0; transform: translateY(-100%);}
+    51% {opacity: 1;}
+}
+
+
+//circle wave
+.circle-wave-default{
+  animation: ripple 1s linear infinite;
+  -webkit-animation:ripple 1s linear infinite;
+  -moz-animation: ripple 1s linear infinite;
+  -o-animation:  ripple 1s linear infinite;
+  -webkit-transition: .5s linear;
+}
+
+.circle-wave-white{
+  animation: ripple-white 1s linear infinite;
+  -webkit-animation: ripple-white 1s linear infinite;
+  -moz-animation: ripple-white 1s linear infinite;
+  -o-animation: ripple-white 1s linear infinite;
+  -webkit-transition: .5s linear;
+}
+
+/*circle wave*/
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1);
+    box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1)
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0);
+    box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0)
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1);
+    box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1)
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0);
+    box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0)
+  }
+}
+
+
+@-webkit-keyframes ripple-white {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1)
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0)
+  }
+}
+
+@keyframes ripple-white {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1)
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0)
+  }
+}

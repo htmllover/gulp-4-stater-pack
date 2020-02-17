@@ -1,0 +1,32 @@
+.badge{
+  padding:
+          px 6px;
+  text-align: center;
+  font-family: $heading-font-family;
+  font-weight: $semi-bold;
+  line-height: 0.75rem;
+  font-size: 0.6589rem;
+}
+.badge-round {
+  border-radius: 1em;
+}
+.btn{
+  .badge{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+  }
+}
+.badge-demo{
+  span{
+    margin-right: 1em;
+  }
+}
+.badge.up {
+  position: relative;
+  top: -10px;
+  margin: 0 -.8em;
+  border-radius: 15px;
+  padding: .25em .4em;
+}

@@ -1,0 +1,68 @@
+
+
+
+//different feature css
+
+.different-feature-list{
+  li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 25px;
+
+    i{
+      margin-right: 10px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+//feature image wrap
+
+.feature-image-wrap{
+  position: relative;
+  display: block;
+  img{
+    max-width: 644px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+
+.feature-hero-block{
+  .feature-image-wrap-2{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 585px;
+    width: 100%;
+    height: 472px;
+    .feature-img-1{
+      max-width: 450px;
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      right: 12px;
+      z-index: 2;
+    }
+    .feature-img-2{
+      max-width: 186px;
+      width: 100%;
+      position: absolute;
+      top: 120px;
+      left: -20px;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,302 @@
+//content box css
+.single-box{
+  margin:1rem;
+  .box-icon {
+
+  }
+  //box content
+  .box-content{
+    h5{
+      margin-bottom: 0.25rem;
+    }
+    p{
+
+    }
+  }
+}
+.single-box.box-border{
+  border: 1px solid $custom-border-color;
+  border-radius: 4px;
+  padding: 30px;
+}
+.single-box.primary-color{
+  .box-icon {
+    color: $primary-color;
+  }
+  .box-content{
+    h5{
+      color: $primary-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+.single-box.secondary-color{
+  .box-icon {
+    color: $secondary-color;
+  }
+  .box-content{
+    h5{
+      color: $secondary-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+.single-box.accent-color{
+  .box-icon {
+    color: $accent-color;
+  }
+  .box-content{
+    h5{
+      color: $accent-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+.single-box.dark-color{
+  .box-icon {
+    color: $dark-color;
+  }
+  .box-content{
+    h5{
+      color: $dark-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+
+.single-box.success-color{
+  .box-icon {
+    color: $success-color;
+  }
+  .box-content{
+    h5{
+      color: $success-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+.single-box.error-color{
+  .box-icon {
+    color: $error-color;
+  }
+  .box-content{
+    h5{
+      color: $error-color;
+    }
+    p{
+      color: $body-color;
+    }
+  }
+}
+
+//square background icon box
+
+.single-box.square-icon-box{
+  .box-icon{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    i{
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 0 1px 8px -26px rgba(0,0,0,0.05),0 0px 10px 0px rgba(0,0,0,0.1) !important;
+      &:after{
+        width: 70px;
+        height: 70px;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -7px;
+        left: -7px;
+        opacity: $opacity-8;
+        border-radius: 4px;
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        transition: all $transition-in;
+      }
+    }
+  }
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+//circle square box
+.square-icon-box.circle-box{
+  .box-icon{
+    i{
+      border-radius: 50%!important;
+      &:after{
+        border-radius: 50%!important;
+      }
+    }
+  }
+}
+
+
+
+.square-icon-box.primary-color{
+  .box-icon{
+    i{
+      background: $primary-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+.square-icon-box.secondary-color{
+  .box-icon{
+    i{
+      background: $secondary-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.square-icon-box.accent-color{
+  .box-icon{
+    i{
+      background: $accent-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $accent-color;
+        }
+      }
+    }
+  }
+}
+
+.square-icon-box.dark-color{
+  .box-icon{
+    i{
+      background: $dark-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $dark-color;
+        }
+      }
+    }
+  }
+}
+
+.square-icon-box.success-color{
+  .box-icon{
+    i{
+      background: $success-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $success-color;
+        }
+      }
+    }
+  }
+}
+
+.square-icon-box.error-color{
+  .box-icon{
+    i{
+      background: $error-color;
+      color: $white-color !important;
+    }
+  }
+
+  &:hover{
+    .box-icon{
+      i{
+        &:after{
+          border: 2px solid $error-color;
+        }
+      }
+    }
+  }
+}
+
+// grid style css
+
+.grid{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  .gridElement{
+    width: calc(33.333% - 2px);
+    margin: 1px;
+    min-width: 200px;
+    padding: 40px 32px;
+    -webkit-transition: 0.1s ease-in background-color;
+    transition: 0.1s ease-in background-color;
+  }
+}

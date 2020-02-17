@@ -1,0 +1,88 @@
+
+/*footer css*/
+footer{
+
+  h6{
+    &:not(:last-child){
+      margin-bottom: 1.16666666666667em;
+    }
+  }
+  .h6{
+    &:not(:last-child){
+      margin-bottom: 1.16666666666667em;
+    }
+  }
+
+
+  ul{
+    li{
+      &:not(:hover){
+        opacity: $opacity-7;
+      }
+    }
+  }
+
+  ul:not(.list-inline):not(.slides) > li {
+    line-height: 1.803142857em !important;
+  }
+  ul:not([class*='menu']) li > a:hover {
+    text-decoration: none;
+  }
+
+
+  ul:not([class*='menu']) li > a {
+    font-weight: $regular;
+    font-size: 0.92514286em;
+    display: block;
+  }
+
+
+
+  //small text
+  .small-text{
+    font-size: 0.86714286em;
+    &:not(p){
+      opacity: $opacity-6;
+    }
+  }
+
+  a{
+    font-weight: normal;
+  }
+  a.small-text:not(:first-child) {
+    margin-left: 1.85714286em;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+//foreground color change for background color
+
+footer:not(.primary-bg):not(.dark-bg):not(.secondary-bg):not(.accent-bg) a {
+  color: $link-normal-color;
+}
+
+
+@media (min-width: 768px){
+  footer.bg-image:not(.light-bg-image) span, footer.bg-image:not(.light-bg-image) p, footer.bg-image a, footer.bg-image a {
+    color: $white-color !important;
+  }
+}
+footer.bg-image:not(.light-bg-image) span, footer.bg-image:not(.light-bg-image) p, footer.bg-image a {
+  color: $white-color !important;
+}
+
+
+//footer 1
+//footer.footer-1{
+//  .row{
+//    &:last-child{
+//      margin-top: 1.914286em;
+//    }
+//  }
+//}
+

@@ -1,0 +1,37 @@
+//icon css
+.icon {
+  line-height: 1.5125468em;
+  font-size: 1.75714286em;
+  font-weight: normal;
+}
+.icon-extra-small {
+  font-size: 1.15714286em;
+}
+.icon-default{
+  font-size: 1.75714286em;
+}
+.icon-small {
+  font-size: 2.95714286em;
+}
+.icon-large {
+  font-size: 3.95142857em;
+}
+
+
+//icon btn
+.icon-btn {
+  padding-left: 5.57142857em;
+  i{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 13px;
+    border-radius: 6px 0 0 6px;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 400;
+  }
+}
+

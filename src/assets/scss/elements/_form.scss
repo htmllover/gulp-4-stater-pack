@@ -1,0 +1,58 @@
+.required-field:after {
+  content: '*';
+  padding-left: 4px;
+  color: $error-color;
+  font-size: 1em;
+  top: 2px;
+  position: absolute;
+}
+
+
+
+//contact form
+
+.card-contact{
+  border: 0;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+  border-radius: 7px;
+  margin-top: 30px;
+  .card-header{
+    background: transparent;
+    border-bottom: none;
+  }
+  .card-body{
+    label {
+      color: hsla(0,0%,100%,.6);
+    }
+  }
+  .info:first-of-type {
+    z-index: 2;
+  }
+  .info {
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 10px 30px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  .info-horizontal {
+    text-align: left!important;
+    .icon {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin: 30px 0 0 15px;
+    }
+    .description {
+      overflow: hidden;
+      text-align: justify;
+     .info-title {
+        margin: 25px 0 15px;
+        padding: 0 15px;
+        color: #fff;
+      }
+    }
+  }
+}

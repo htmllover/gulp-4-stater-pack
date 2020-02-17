@@ -1,0 +1,305 @@
+// tab style one
+
+.nav-tabs.tab-style-1, .nav-tabs.tab-style-2, .nav-tabs.tab-style-3,
+.nav-tabs.tab-style-4, .nav-tabs.tab-style-5, .nav-tabs.tab-style-6,
+.nav-tabs.tab-style-7, .nav-tabs.tab-style-8, .nav-tabs.tab-style-9,
+.nav-tabs.tab-style-10{
+  margin-bottom: 1.55714286em;
+  border-bottom-color: $custom-dark-border-color;
+  transition: all $transition-in;
+  li{
+    transition: all $transition-in;
+    -webkit-transition: all $transition-in;
+    -moz-transition: all $transition-in;
+    .nav-link{
+      padding: 0.55857143em 1.125714286em;
+      border-radius: 0;
+      margin-bottom: 0;
+      line-height: inherit;
+    }
+    .active{
+      border-color: $custom-dark-border-color;
+      border-bottom-color: transparent;
+      color: $primary-color;
+    }
+  }
+}
+
+.tab-style-1-content, .tab-style-2-content, .tab-style-3-content,
+.tab-style-4-content, .tab-style-5-content, .tab-style-6-content,
+.tab-style-7-content, .tab-style-8-content, .tab-style-9-content,
+.tab-style-10-content{
+  text-align: left;
+}
+
+
+
+
+// tab style two
+
+.nav-tabs.tab-style-2{
+  display: inherit !important;
+  li{
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+//tab style three
+.nav-tabs.tab-style-3, .nav-tabs.tab-style-5,
+.nav-tabs.tab-style-6, .nav-tabs.tab-style-7{
+  display: inline-flex;
+  border-radius: 4px;
+  li{
+    .nav-link{
+      border: 1px solid $custom-dark-border-color;
+      border-right: none;
+      color: $body-color;
+      line-height: inherit;
+    }
+    .nav-link.active{
+      color: $primary-color;
+      background: $custom-color;
+    }
+  }
+  li.nav-item{
+    &:last-child .nav-link{
+      border-right: 1px solid $custom-dark-border-color;
+    }
+  }
+}
+
+//tab style four
+
+.nav-tabs.tab-style-4{
+  display: inline-flex;
+  border: none;
+  li{
+    display: inline-block;
+    float: none;
+    border: $custom-dark-border-color;
+    .nav-link{
+      border: none;
+      line-height: inherit;
+      &:after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: $primary-border-color;
+        transition: width .3s;
+      }
+      &:hover{
+        &:after{
+          width: 100%;
+        }
+      }
+    }
+    .active{
+      color: $primary-color;
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//tab style five
+
+.nav-tabs.tab-style-5{
+  border: none !important;
+  background: $white-color;
+  li{
+    margin: 0;
+    .nav-link{
+      border: none !important;
+      line-height: inherit;
+      &:hover{
+        background: $primary-color;;
+        color: $white-color;
+        border-radius: 4px;
+      }
+    }
+    .active{
+      background: $primary-color;;
+      color: $white-color;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+//tab style six
+
+.nav-tabs.tab-style-6{
+  li{
+    a{
+      span{
+        display: block;
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+//tab style seven
+.nav-tabs.tab-style-7{
+  li{
+    a{
+      span{
+        margin-right: 5px;
+        i{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+
+//tab style eight
+
+.nav-tabs.tab-style-8{
+  li{
+    margin: 0;
+    .nav-link{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      span{
+        margin-right: 5px;
+        i{
+          vertical-align: middle;
+        }
+      }
+      &:hover{
+        border-bottom-color: $primary-color;
+      }
+    }
+    .active{
+      background: transparent;
+      border-bottom-color: $primary-color;
+    }
+    &:first-child{
+      .nav-link{
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
+//tab style nine
+.nav-tabs.tab-style-9{
+  display: flex;
+  flex-flow: column nowrap;
+  border-left: 1px solid $custom-dark-border-color;
+  border-bottom: none;
+  li{
+    margin: 0;
+    .nav-link{
+      border: none;
+      border-left: 1px solid transparent;
+      margin-left: -1px;
+      line-height: inherit;
+      span{
+        margin-right: 5px;
+        i{
+          vertical-align: middle;
+        }
+      }
+      &:hover{
+        border-left-color: transparent;
+      }
+    }
+    .active{
+      background: transparent;
+      border-left-color: $primary-color;
+      &:hover{
+        border-left-color: $primary-color;
+      }
+    }
+  }
+}
+
+
+
+//tab style ten
+.custom-tab-container{
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  .nav-tabs.tab-style-10{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    transition: all $transition-in;
+    li{
+      position: relative;
+      background: $white-color;
+      transition: all $transition-in;
+      -webkit-box-shadow: 0 4px 15px rgba(105,106,119,.05);
+      box-shadow: 0 4px 15px rgba(105,106,119,.05);
+      .nav-link{
+        padding: 2.12rem 1rem;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        span{
+          display: inline-block;
+          i{
+            font-size: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+        }
+      }
+      .active{
+        border-color: $primary-color;
+        &:after{
+          content: "";
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          right: -12px;
+          top: 50%;
+          background-color: $white-color;
+          -webkit-transform: translateY(-50%) rotateZ(45deg);
+          transform: translateY(-50%) rotateZ(45deg);
+          border-top: 1px solid $primary-border-color;
+          border-right: 1px solid $primary-border-color;
+        }
+      }
+
+
+
+    }
+  }
+}
+
+.tab-style-10-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $white-color;
+  padding: 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 15px rgba(105,106,119,.05);
+  box-shadow: 0 4px 15px rgba(105,106,119,.05);
+}
+
+

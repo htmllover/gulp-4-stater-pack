@@ -1,0 +1,306 @@
+
+/*background image*/
+.bg-image{
+  position: relative;
+  .background-image-wraper {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    opacity: 0;
+    background: $dark-color;
+    img{
+      display: none;
+    }
+  }
+  .background-image-wraper:not([class*='col-']) {
+    width: 100%;
+  }
+}
+
+//image overly
+[data-overlay] {
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    background: $dark-color;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+//image overly top
+[data-overlay-top] {
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -moz-linear-gradient(bottom, $dark-color 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, $dark-color), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(bottom, $dark-color 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(bottom, $dark-color 0%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(bottom, $dark-color 0%, rgba(0, 0, 0, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, $dark-color 0%, rgba(0, 0, 0, 0) 100%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+// image overly bottom
+[data-overly-bottom] {
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $dark-color 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, $dark-color));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $dark-color 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $dark-color 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $dark-color 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $dark-color 100%);
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+  }
+}
+
+//image overly gradient
+[data-overlay-gradient]{
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    background: $primary-color;
+    background: -moz-linear-gradient(to right, $primary-rgba-color 5%, $secondary-rgba-color 95%) !important;
+    background: -webkit-linear-gradient(to right, $primary-rgba-color 5%, $secondary-rgba-color 95%) !important;
+    background: linear-gradient(to right, $primary-rgba-color 5%, $secondary-rgba-color 95%) !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+
+//image overly top, bottom opacity
+[data-overlay="1"], [data-overly-top="1"], [data-overly-bottom="1"], [data-overlay-gradient="1"]{
+  &:before{
+    opacity: 0.1;
+  }
+}
+
+[data-overlay="2"], [data-overly-top="2"], [data-overly-bottom="2"] [data-overlay-gradient="2"]{
+  &:before{
+    opacity: 0.2;
+  }
+}
+[data-overlay="3"], [data-overly-top="3"], [data-overly-bottom="3"] [data-overlay-gradient="3"]{
+  &:before{
+    opacity: 0.3;
+  }
+}
+
+[data-overlay="4"], [data-overly-top="4"], [data-overly-bottom="4"] [data-overlay-gradient="4"]{
+  &:before{
+    opacity: 0.4;
+  }
+}
+
+[data-overlay="5"], [data-overly-top="5"], [data-overly-bottom="5"] [data-overlay-gradient="5"]{
+  &:before{
+    opacity: 0.5;
+  }
+}
+
+[data-overlay="6"], [data-overly-top="6"], [data-overly-bottom="6"] [data-overlay-gradient="6"]{
+  &:before{
+    opacity: 0.6;
+  }
+}
+
+[data-overlay="7"], [data-overly-top="7"], [data-overly-bottom="7"] [data-overlay-gradient="7"]{
+  &:before{
+    opacity: 0.7;
+  }
+}
+[data-overlay="8"], [data-overly-top="8"], [data-overly-bottom="8"] [data-overlay-gradient="8"]{
+  &:before{
+    opacity: 0.8;
+  }
+}
+
+[data-overlay="9"], [data-overly-top="9"], [data-overly-bottom="9"] [data-overlay-gradient="9"]{
+  &:before{
+    opacity: 0.9;
+  }
+}
+
+
+.bg-image:not(.light-bg-image) h1,
+.bg-image:not(.light-bg-image) h2,
+.bg-image:not(.light-bg-image) h3,
+.bg-image:not(.light-bg-image) span,
+.bg-image:not(.light-bg-image) h4,
+.bg-image:not(.light-bg-image) h5,
+.bg-image:not(.light-bg-image) h6,
+.bg-image:not(.light-bg-image) p,
+.bg-image:not(.light-bg-image) ul,
+.bg-image:not(.light-bg-image) blockquote,
+[data-overlay-top]:not(.light-bg-image) h1,
+[data-overlay-top]:not(.light-bg-image) h2,
+[data-overlay-top]:not(.light-bg-image) h3,
+[data-overlay-top]:not(.light-bg-image) h4,
+[data-overlay-top]:not(.light-bg-image) h5,
+[data-overlay-top]:not(.light-bg-image) h6,
+[data-overlay-top]:not(.light-bg-image) p,
+[data-overlay-top]:not(.light-bg-image) span,
+[data-overlay-top]:not(.light-bg-image) ul,
+[data-overlay-top]:not(.light-bg-image) blockquote,
+[data-overly-bottom]:not(.light-bg-image) h1,
+[data-overly-bottom]:not(.light-bg-image) h2,
+[data-overly-bottom]:not(.light-bg-image) h3,
+[data-overly-bottom]:not(.light-bg-image) h4,
+[data-overly-bottom]:not(.light-bg-image) h5,
+[data-overly-bottom]:not(.light-bg-image) h6,
+[data-overly-bottom]:not(.light-bg-image) p,
+[data-overly-bottom]:not(.light-bg-image) span,
+[data-overly-bottom]:not(.light-bg-image) ul,
+[data-overly-bottom]:not(.light-bg-image) blockquote,
+[data-overlay-gradient]:not(.light-bg-image) h1,
+[data-overlay-gradient]:not(.light-bg-image) h2,
+[data-overlay-gradient]:not(.light-bg-image) h3,
+[data-overlay-gradient]:not(.light-bg-image) h4,
+[data-overlay-gradient]:not(.light-bg-image) h5,
+[data-overlay-gradient]:not(.light-bg-image) h6,
+[data-overlay-gradient]:not(.light-bg-image) p,
+[data-overlay-gradient]:not(.light-bg-image) span,
+[data-overlay-gradient]:not(.light-bg-image) ul,
+[data-overlay-gradient]:not(.light-bg-image) blockquote{
+  color: $white-color;
+}
+
+
+[data-overlay-top].light-bg-image:before,
+[data-overly-bottom].light-bg-image:before,
+[data-overlay-gradient].light-bg-image:before {
+  background: $white-color;
+}
+
+
+.bg-image.animated-color-bg > .background-image-wraper {
+  opacity: .2 !important;
+}
+
+[data-overlay] *:not(.container):not(.background-image-wraper) {
+  z-index: 2;
+}
+.bg-image{
+  .card-body{
+    z-index: 2;
+  }
+}
+
+.light-bg-image {
+  .background-image-wraper {
+    background: none;
+  }
+}
+
+/*video background*/
+.video-bg {
+  position: relative;
+  overflow: hidden;
+  .background-image-wraper{
+    opacity: 0 !important;
+  }
+  .youtube-video-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 0 !important;
+  }
+}
+
+
+/*lightbox*/
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/*popup videos*/
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+

@@ -1,0 +1,104 @@
+//dropcaps
+.drop-cap{
+  p{
+    &:nth-of-type(1):first-letter{
+      float: left;
+      font-size: 60px;
+      line-height: 38px;
+      margin: 0 16px 0 0;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: $semi-bold;
+      font-family: $heading-font-family;
+    }
+  }
+}
+
+//dropcaps color
+.drop-cap.dropcap-color-primary{
+  p{
+    &:nth-of-type(1):first-letter{
+      color: $primary-color;
+    }
+  }
+}
+.drop-cap.dropcap-color-secondary{
+  p{
+    &:nth-of-type(1):first-letter{
+      color: $secondary-color;
+    }
+  }
+}
+.drop-cap.dropcap-color-accent{
+  p{
+    &:nth-of-type(1):first-letter{
+      color: $accent-color;
+    }
+  }
+}
+.drop-cap.dropcap-color-dark{
+  p{
+    &:nth-of-type(1):first-letter{
+      color: $dark-color;
+    }
+  }
+}
+
+//dropcap background
+.drop-cap.dropcap-primary-bg, .drop-cap.dropcap-secondary-bg, .drop-cap.dropcap-accent-bg, .drop-cap.dropcap-dark-bg{
+  p{
+    &:nth-of-type(1):first-letter{
+      padding: 5px 10px;
+      font-size: 40px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.drop-cap.dropcap-primary-bg{
+  p{
+    &:nth-of-type(1):first-letter{
+      background: $primary-color;
+      color: $white-color;
+    }
+  }
+}
+.drop-cap.dropcap-secondary-bg{
+  p{
+    &:nth-of-type(1):first-letter{
+      background: $secondary-color;
+      color: $white-color;
+    }
+  }
+}
+.drop-cap.dropcap-accent-bg{
+  p{
+    &:nth-of-type(1):first-letter{
+      background: $accent-color;
+      color: $white-color;
+    }
+  }
+}
+.drop-cap.dropcap-dark-bg {
+  p {
+    &:nth-of-type(1):first-letter {
+      background: $dark-color;
+      color: $white-color;
+    }
+  }
+}
+
+
+//dropcap circle
+
+.drop-cap.drop-cap-circle{
+  p{
+    &:nth-of-type(1):first-letter{
+      border: 1px solid $custom-dark-border-color;
+      padding: 5px 10px;
+      font-size: 40px;
+      margin-top: 8px;
+      border-radius: 50%;
+    }
+  }
+}

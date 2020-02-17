@@ -1,0 +1,58 @@
+//demo icon css
+.icon-section {
+  clear: both;
+  overflow: hidden;
+  margin: 1em 0;
+  .icon-container {
+    width: 20%;
+    padding: .7em 0;
+    float: left;
+    position: relative;
+    text-align: left;
+
+    .icon-name {
+      color: $body-color;
+      margin-left: 30px;
+      font-size: .8em;
+      transition: .3s;
+    }
+
+    [class^="ti-"], [class*=" ti-"]{
+      color: $link-normal-color;
+      position: absolute;
+      margin-top: 7px;
+      transition: .3s;
+    }
+    &:hover{
+      .icon-name{
+        color: $dark-color;
+        margin-left: 40px;
+      }
+
+      [class^="ti-"], [class*=" ti-"]{
+        font-size: 2.2em;
+        margin-top: -5px;
+      }
+
+    }
+
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 576px){
+  .icon-container{
+    width: 50% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px){
+  .icon-container{
+    width: 33% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+  .icon-container{
+    width: 25% !important;
+  }
+}

@@ -1,0 +1,64 @@
+
+
+/*alerts*/
+.alert{
+  p{
+    margin-bottom: 0 !important;
+    &:last-child{
+      margin-bottom: 0 !important;
+    }
+  }
+  &:last-child{
+    margin-bottom: 0 !important;
+  }
+  i{
+    padding-right: .66rem;
+    position: relative;
+  }
+}
+
+.alert-outline.alert{
+  background-color: transparent;
+}
+
+.alert-icon {
+  border-width: 0;
+  border-radius: 0;
+  border-left-width: 4rem;
+}
+.alert-icon:before {
+  width: 4rem;
+  position: absolute;
+  left: -4rem;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 600;
+}
+.alert-icon.alert-primary:before {
+  content: "\f007";
+}
+.alert-icon.alert-secondary:before {
+  content: "\f164";
+}
+.alert-icon.alert-success:before {
+  content: "\f00c";
+}
+.alert-icon.alert-danger:before {
+  content: "\f06a";
+}
+.alert-icon.alert-warning:before {
+  content: "\f071";
+}
+.alert-icon.alert-info:before {
+  content: "\f0a1";
+}
+.alert-icon.alert-dark:before {
+  content: "\f0f3";
+}
+
